@@ -1,6 +1,9 @@
 ## Kaylee Dockter
-
-You can use the [editor on GitHub](https://github.com/kayleedockter/kayleedockter.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Checkout my most recent projects.
+- [Hangman](https://github.com/kayleedockter/kayleedockter.github.io/edit/main/Hangman.md) 
+- [Bank](https://github.com/kayleedockter/kayleedockter.github.io/edit/main/Bank.md) 
+- [Stock Investing](https://github.com/kayleedockter/kayleedockter.github.io/edit/main/Stocks.md) 
+- [Boggle Game](https://github.com/kayleedockter/kayleedockter.github.io/edit/main/Boggle.md) 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
