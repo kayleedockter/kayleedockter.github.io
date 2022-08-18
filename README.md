@@ -27,6 +27,9 @@ This project was the first time I had ever been exposed to php, so it was a bit 
 I especially had trouble with the session variables.
 I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
 
+***Sample Code***
+```
+```
 ### [Bank](https://github.com/rflowers45/TigerBanking) 
 ![Bank](/docs/assets/Bank1.png)
 ![Bank](/docs/assets/Bank2.png)
@@ -38,10 +41,18 @@ I'd say out of all the projects though, this went the smoothest in terms of my u
 
 ***Overview***
 
+This project displays a banking app that allows the user to deposit and withdraw money into one of their bank accounts. 
+The app also allows the user to view previous transactions for each of the accounts.
+
 ***Challenges***
 
-I would say our greatest challenge for this project was understanding and properly implementing Entity Framework.
+I would say our greatest challenge for this project was understanding and properly implementing MVC and Entity Framework
+as none of us had previously worked in them before.
+I personally had never worked in C# either which was a challenge at the start for me as well.
 
+***Sample Code***
+```
+```
 ### [Stock Investing](https://github.com/rflowers45/StockInvestingGame) 
 ![Stock Game](/docs/assets/Stocks1.png)
 ![Stock Game](/docs/assets/Stocks2.png)
@@ -51,7 +62,7 @@ I would say our greatest challenge for this project was understanding and proper
 .NET 6 framework, Razer Pages, Javascript, JQuery, C#
 
 ***Overview***
-
+This project was an introduction to a Stock Investing Application. 
 ***Challenges***
 
 This project was the first time I had ever been exposed to php, so it was a bit of a learning curve at the start.
