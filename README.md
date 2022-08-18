@@ -1,5 +1,5 @@
-# Kaylee Dockter CS3750 Portfolio
-# kayleedockter-github.io
+# Kaylee Dockter CS3750 [Portfolio](https://github.com/kayleedockter/kayleedockter.github.io) 
+
 Hello, my name is Kaylee Dockter. 
 I am a student at Weber State University pursuing a Computer Science degree with a minor in Mathematics.
 I am also currently working as a Business Intelligence Account Manager at Marketstar.
