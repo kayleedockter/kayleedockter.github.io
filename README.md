@@ -8,9 +8,9 @@ Checkout out some of my most recent projects below. Each link to their respectiv
 ## Projects:
 
 ### [Hangman](https://github.com/kayleedockter/Hangman) 
-![Hangman Game](/docs/assets/Hangman1.png)
-![Hangman Game](/docs/assets/Hangman2.png)
-![Hangman Game](/docs/assets/Hangman3.png)
+![Hangman Game](/docs/assets/Hangman1.PNG)
+![Hangman Game](/docs/assets/Hangman2.PNG)
+![Hangman Game](/docs/assets/Hangman3.PNG)
 
 ***Created With***
 
@@ -82,9 +82,9 @@ if (isset($_POST["login"])) {
     
 ```
 ### [Bank](https://github.com/rflowers45/TigerBanking) 
-![Bank](/docs/assets/Bank1.png)
-![Bank](/docs/assets/Bank2.png)
-![Bank](/docs/assets/Bank3.png)
+![Bank](/docs/assets/Bank1.PNG)
+![Bank](/docs/assets/Bank2.PNG)
+![Bank](/docs/assets/Bank3.PNG)
 
 ***Created With***
 
@@ -147,8 +147,8 @@ I had a lot of fun with the design of the bank page and was pretty happy with ho
 ![Bank](/docs/assets/Bank2.png)
 
 ### [Stock Investing](https://github.com/rflowers45/StockInvestingGame) 
-![Stock Game](/docs/assets/Stocks1.png)
-![Stock Game](/docs/assets/Stocks2.png)
+![Stock Game](/docs/assets/Stocks1.PNG)
+![Stock Game](/docs/assets/Stocks2.PNG)
 
 ***Created With***
 
@@ -162,8 +162,8 @@ This project was the first time I had ever been exposed to php, so it was a bit 
 I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
 
 ### [Boggle Game](https://github.com/kayleedockter/BoggleGame) 
-![Boggle Game](/docs/assets/Boggle1.png)
-![Boggle Game](/docs/assets/Boggle2.png)
+![Boggle Game](/docs/assets/Boggle1.PNG)
+![Boggle Game](/docs/assets/Boggle2.PNG)
 
 ***Created With***
 
