@@ -14,7 +14,7 @@ Checkout out some of my most recent projects below. Each link to their respectiv
 
 ***Created With***
 
-PHP, SQL
+PHP, SQL.
 
 ***Overview***
 
@@ -88,7 +88,7 @@ if (isset($_POST["login"])) {
 
 ***Created With***
 
-.NET 6 framework, MVC, Entity Framework, Javascript, JQuery, C#
+.NET 6 framework, MVC, Entity Framework, Javascript, JQuery, C#.
 
 ***Overview***
 
@@ -150,12 +150,12 @@ I had a lot of fun with the design of the bank page and was pretty happy with ho
 
 ***Created With***
 
-.NET 6 framework, Razer Pages, Javascript, JQuery, C#
+.NET 6 framework, Razer Pages, Javascript, JQuery, C#.
 
 ***Overview***
 
 This project was an introduction to a Stock Investing Application. We were required to provide the user three different
-ways to buy and sells stocks
+ways to buy and sells stocks.
 
 ***Challenges***
 
@@ -226,7 +226,25 @@ This meant for example, figuring out how to track seven days from the start of t
 
 ***Overview***
 
+The Boggle Game is a 2-player word guessing game in which the players are given 60 seconds to create as many words as they can
+with the letters on the board. The letters have to be next to eachother in order to form a word, and the word has to exist.
+
 ***Challenges***
 
-This project was the first time I had ever been exposed to php, so it was a bit of a learning curve at the start.
-I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
+This project came with many challenges... Including using SignalR for the first time, learning how to call a 
+SignalR function in javascript and MVC, and figuring out how to access the database we created with MSSQL with SignalR.
+
+***Sample Code***
+
+Getting the page to redirect to an EndGame.cshtml page after the timer ran out took a long time for me to figure out 
+and it turns out it was just this small line of code.
+```
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer1").innerHTML = "Time's up!";
+                    var url = $("#RedirectTo").val();
+                    location.href = url;
+                }
+            }, 1000);
+        }
+```
