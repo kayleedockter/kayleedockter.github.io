@@ -18,9 +18,13 @@ PHP, SQL
 
 ***Overview***
 
+This project plays through a simple game of hangman. The user is required to sign up or login in to play
+and is given 12 attempts to guess the word properly. The game finishes with a scoreboard ranking the player.
+
 ***Challenges***
 
 This project was the first time I had ever been exposed to php, so it was a bit of a learning curve at the start.
+I especially had trouble with the session variables.
 I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
 
 ### [Bank](https://github.com/rflowers45/TigerBanking) 
@@ -36,8 +40,7 @@ I'd say out of all the projects though, this went the smoothest in terms of my u
 
 ***Challenges***
 
-This project was the first time I had ever been exposed to php, so it was a bit of a learning curve at the start.
-I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
+I would say our greatest challenge for this project was understanding and properly implementing Entity Framework.
 
 ### [Stock Investing](https://github.com/rflowers45/StockInvestingGame) 
 ![Stock Game](/docs/assets/Stocks1.png)
