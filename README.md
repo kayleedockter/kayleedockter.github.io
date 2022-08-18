@@ -28,6 +28,7 @@ I especially had trouble with the session variables.
 I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
 
 ***Sample Code***
+
 Working on both creating and retrieving the salt and hash password to and from the databse was the most enjoyable part of the project for me.
 We were so relieved when we finally got it to work.
 ```
@@ -101,8 +102,50 @@ as none of us had previously worked in them before.
 I personally had never worked in C# either which was a challenge at the start for me as well.
 
 ***Sample Code***
+
+Because I had the least experience in C# in this group, I was assigned most of the html and css required for the assignment.
+I had a lot of fun with the design of the bank page and was pretty happy with how it turned out.
+
+(Html)
 ```
+<div class="text-center">
+    <div class="row">
+        <div class="column">
+            <a asp-action="Deposit" asp-route-userId="@Model.userId" style="text-decoration: none; color: inherit;">
+                <article class="card">
+                    <img src="~/images/deposit.jpg" alt="deposit" style="width:100%">
+                    <div class="container">
+                        <h1>Make a Deposit</h1>
+                    </div>
+                </article>
+            </a>
+        </div>
+        <div class="column">
+            <a asp-action="Withdraw" asp-route-userId="@Model.userId" style="text-decoration: none; color: inherit;">
+                <article class="card">
+                    <img src="~/images/withdraw.jpg" alt="withdraw" style="width:100%">
+                    <div class="container">
+                        <h1>Make a Withdrawal</h1>
+                    </div>
+                </article>
+            </a>
+        </div>
+        <div class="column">
+            <a asp-action="Transactions" asp-route-userId="@Model.userId" style="text-decoration: none; color: inherit;">
+                <article class="card">
+                    <img src="~/images/search.png" alt="search" style="width:100%">
+                    <div class="container">
+                        <h1>View Account History</h1>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </div>
+</div>
 ```
+(Final Product)
+![Bank](/docs/assets/Bank2.png)
+
 ### [Stock Investing](https://github.com/rflowers45/StockInvestingGame) 
 ![Stock Game](/docs/assets/Stocks1.png)
 ![Stock Game](/docs/assets/Stocks2.png)
