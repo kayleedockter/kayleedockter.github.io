@@ -217,8 +217,8 @@ This meant for example, figuring out how to track seven days from the start of t
         }
 ```
 ### [Boggle Game](https://github.com/kayleedockter/BoggleGame) 
-![Boggle Game](/docs/assets/Boggle1.PNG)
-![Boggle Game](/docs/assets/Boggle2.PNG)
+![Boggle Game](/docs/assets/BoggleGame1.PNG)
+![Boggle Game](/docs/assets/BoggleGame2.PNG)
 
 ***Created With***
 
