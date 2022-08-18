@@ -8,7 +8,7 @@ Checkout out some of my most recent projects below.
 
 ## Projects:
 
-### [Hangman](https://github.com/kayleedockter/Hangman) 
+# [Hangman](https://github.com/kayleedockter/Hangman) 
 ![Hangman Game](/docs/assets/Hangman1.PNG)
 ![Hangman Game](/docs/assets/Hangman2.PNG)
 ![Hangman Game](/docs/assets/Hangman3.PNG)
@@ -82,7 +82,7 @@ if (isset($_POST["login"])) {
 	}
     
 ```
-### [Bank](https://github.com/rflowers45/TigerBanking) 
+# [Bank](https://github.com/rflowers45/TigerBanking) 
 ![Bank](/docs/assets/Bank1.PNG)
 ![Bank](/docs/assets/Bank2.PNG)
 ![Bank](/docs/assets/Bank3.PNG)
@@ -145,7 +145,7 @@ I had a lot of fun with the design of the bank page and was pretty happy with ho
 </div>
 ```
 
-### [Stock Investing](https://github.com/rflowers45/StockInvestingGame) 
+# [Stock Investing](https://github.com/rflowers45/StockInvestingGame) 
 ![Stock Game](/docs/assets/Stocks1.PNG)
 ![Stock Game](/docs/assets/Stocks2.PNG)
 
@@ -217,7 +217,7 @@ This meant for example, figuring out how to track seven days from the start of t
 
         }
 ```
-### [Boggle Game](https://github.com/kayleedockter/BoggleGame) 
+# [Boggle Game](https://github.com/kayleedockter/BoggleGame) 
 ![Boggle Game](/docs/assets/BoggleGame1.PNG)
 ![Boggle Game](/docs/assets/BoggleGame2.PNG)
 
