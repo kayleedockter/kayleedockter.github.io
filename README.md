@@ -143,8 +143,6 @@ I had a lot of fun with the design of the bank page and was pretty happy with ho
     </div>
 </div>
 ```
-(Final Product)
-![Bank](/docs/assets/Bank2.png)
 
 ### [Stock Investing](https://github.com/rflowers45/StockInvestingGame) 
 ![Stock Game](/docs/assets/Stocks1.PNG)
@@ -155,12 +153,69 @@ I had a lot of fun with the design of the bank page and was pretty happy with ho
 .NET 6 framework, Razer Pages, Javascript, JQuery, C#
 
 ***Overview***
-This project was an introduction to a Stock Investing Application. 
+
+This project was an introduction to a Stock Investing Application. We were required to provide the user three different
+ways to buy and sells stocks
+
 ***Challenges***
 
-This project was the first time I had ever been exposed to php, so it was a bit of a learning curve at the start.
-I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
+This project for me felt the most over my head and I am grateful to my teammates for working with me
+and helping me better understand the concepts and the code. Something I really struggled to grasp was 
+how we were to connect the slider to the pie chart and the text field when the user entered an amount.
 
+***Sample Code***
+
+I worked mostly on the actions of the hold and quit buttons and how the game was to end. 
+This meant for example, figuring out how to track seven days from the start of the game and how to change the price each day.
+```
+  public IActionResult OnPostHold()
+        {
+            try
+            {
+                var symbol = HttpContext.Session.GetString("ticker"); //Setting the ticker symbol to what the user has entered
+                var apiKey = "YQ12ME2NUXQ29XG8"; //I got this key by registering my email. You all might wanna do the same or use mine?
+                var dailyPrices = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={symbol}&outputsize=full&apikey={apiKey}&datatype=csv"
+                    .GetStringFromUrl().FromCsv<List<StockData>>();
+               // string endGame = endGameScenario();
+                var vDateIndex = HttpContext.Session.GetInt32("currentDay"); //getting date index
+                int iDateIndex = vDateIndex.Value;
+                
+                var dayPrice = dailyPrices[iDateIndex].Close;//This gets the price
+                price = dayPrice;
+                HttpContext.Session.SetString("price", price.ToString());
+                string sSessionPrice = HttpContext.Session.GetString("price"); //Getting session price
+                string sSessionBalance = HttpContext.Session.GetString("balance"); //Getting session balance
+               
+                var vDayCounter = HttpContext.Session.GetInt32("dayCounter");
+                int iDayCounter = vDayCounter.Value;
+                iDayCounter++;
+                var iSessionShares = HttpContext.Session.GetInt32("shares"); //Getting sessions shares
+                int ownedShares = iSessionShares.Value; //Have to convert nullable-int to int
+                balance = Convert.ToDecimal(sSessionBalance);
+                price = Convert.ToDecimal(sSessionPrice);
+                string endGame = endGameScenario();
+                while (iDayCounter < 8)
+                {
+                    iDateIndex++;
+                    HttpContext.Session.SetInt32("currentDay", iDateIndex);
+                    HttpContext.Session.SetInt32("dayCounter", iDayCounter);
+                    HttpContext.Session.SetInt32("shares", ownedShares); //Setting session shares held
+                    HttpContext.Session.SetString("balance", balance.ToString()); //Setting session balance
+
+                    return new JsonResult("Current Balance: $" + balance + "<br> Shares Held: " + ownedShares + "<br> Current Day: " + iDayCounter + "<br> New Price:  $" + price);
+                }
+                return new JsonResult(endGame);
+
+
+            }
+            catch (Exception)
+            {
+                return new JsonResult(endGameScenario());
+
+            }
+
+        }
+```
 ### [Boggle Game](https://github.com/kayleedockter/BoggleGame) 
 ![Boggle Game](/docs/assets/Boggle1.PNG)
 ![Boggle Game](/docs/assets/Boggle2.PNG)
