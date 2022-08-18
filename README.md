@@ -3,7 +3,8 @@ Hello, my name is Kaylee Dockter.
 I am a student at Weber State University pursuing a Computer Science degree with a minor in Mathematics.
 I am also currently working as a Business Intelligence Account Manager at Marketstar.
 
-Checkout out some of my most recent projects below. Each link to their respective github repos.
+Checkout out some of my most recent projects below. 
+***Each of their names link to their respective github repos.***
 
 ## Projects:
 
