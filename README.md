@@ -28,7 +28,57 @@ I especially had trouble with the session variables.
 I'd say out of all the projects though, this went the smoothest in terms of my understanding of the concepts and languages used.
 
 ***Sample Code***
+Working on both creating and retrieving the salt and hash password to and from the databse was the most enjoyable part of the project for me.
+We were so relieved when we finally got it to work.
 ```
+if (isset($_POST["login"])) {
+		//create connection
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		//check connection
+		if($conn->connect_error){
+			die("Connection failed: " . $conn->connect_error);
+		}
+		//retrieve the salt for this user from the db
+		$sqlSalt = "SELECT `salt` FROM Users WHERE `Username` = '$user'";
+		$getSalt = $conn->query($sqlSalt);
+		if($getSalt->num_rows > 0){
+			while($row = $getSalt->fetch_assoc()){
+				$salt = $row["salt"];
+			}
+		}
+		$hashed = hash(sha512, $pass);
+		//echo "hashenteredpass: " . $hashed . "<br>";
+		$saltHashPass = $salt . $hashed;
+		//echo "enteredpass: " . $saltHashPass . "<br>";
+		
+		//generate random number to grab random word ID with
+		$randWordID = rand(1, 20);
+		$sqlWord = "SELECT `Word` FROM `Words` WHERE `ID` = '$randWordID'";
+		$wordPass = "";
+		//check to make sure user and pass entered are in the db
+		$sql = "SELECT * FROM `Users` WHERE `Username` = '$user' AND `Password` = '$saltHashPass'";
+		$result = $conn->query($sql);
+		if(mysqli_num_rows($result) == 0){
+			echo "Sorry... Username and/or Password not found!";
+		} else {
+			$getWord = $conn->query($sqlWord);//Getting random word
+			if($getWord->num_rows > 0){
+				while($row = $getWord->fetch_assoc()){
+				 $wordPass = $row["Word"];
+				  echo "word " . $wordPass . "<br>";
+				}
+			}
+			$wordLengthPass = strlen($wordPass);
+			$_SESSION["user"] = $user;
+			$_SESSION["word"] = $wordPass;
+			$_SESSION["wordLength"] = $wordLengthPass;
+			$_SESSION["attempt"] = 0;
+			$_SESSION["correct"] = 100;
+			redirect();
+		}	
+		$conn->close();
+	}
+    
 ```
 ### [Bank](https://github.com/rflowers45/TigerBanking) 
 ![Bank](/docs/assets/Bank1.png)
